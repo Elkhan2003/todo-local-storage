@@ -2,7 +2,24 @@ import React from "react";
 
 import scss from "./TodoItem.module.scss";
 
-export const TodoItem = ({ todo, id, completeTodo, deleteTodo }) => {
+interface Todo {
+	complete: boolean;
+	text: string;
+}
+
+interface Props {
+	todo: Todo;
+	id: number;
+	completeTodo: (id: number) => void;
+	deleteTodo: (id: number) => void;
+}
+
+export const TodoItem: React.FC<Props> = ({
+	todo,
+	id,
+	completeTodo,
+	deleteTodo
+}) => {
 	return (
 		<>
 			<div className={scss.todoItems}>

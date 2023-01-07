@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { TodoItem } from "../TodoItem/TodoItem";
 
-export const Todo = () => {
-	const [todos, setTodos] = useState([]);
+interface Todo {
+	complete: boolean;
+	text: string;
+}
+
+export const Todo: React.FC = () => {
+	const [todos, setTodos] = useState<Todo[]>([]);
 	const [inputValue, setInputValue] = useState("");
 
 	const createTodo = () => {
@@ -16,21 +21,28 @@ export const Todo = () => {
 			);
 		}
 	};
-	// console.log(todos)
 
 	useEffect(() => {
-		let localTodo = JSON.parse(localStorage.getItem("todos"));
-		localTodo && setTodos(localTodo);
+		const storedTodos = localStorage.getItem("todos");
+		if (storedTodos) {
+			setTodos(JSON.parse(storedTodos));
+		} else {
+			setTodos([]);
+		}
 	}, []);
 
-	const completeTodo = (id) => {
+	// useEffect(() => {
+	// 	localStorage.setItem("todos", JSON.stringify(todos));
+	// }, [todos]);
+
+	const completeTodo = (id: number) => {
 		let arr = [...todos];
 		arr[id].complete = !arr[id].complete;
 		localStorage.setItem("todos", JSON.stringify(arr));
 		setTodos(arr);
 	};
 
-	const deleteTodo = (id) => {
+	const deleteTodo = (id: number) => {
 		let arr = [...todos];
 		arr.splice(id, 1);
 		localStorage.setItem("todos", JSON.stringify(arr));
