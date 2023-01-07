@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { TodoItem } from "../TodoItem/TodoItem";
 
-export const TodoList = () => {
+export const Todo = () => {
 	const [todos, setTodos] = useState([]);
 	const [inputValue, setInputValue] = useState("");
 
@@ -36,6 +36,7 @@ export const TodoList = () => {
 		localStorage.setItem("todos", JSON.stringify(arr));
 		setTodos(arr);
 	};
+
 	return (
 		<>
 			<div>

@@ -1,10 +1,10 @@
 import React from "react";
-import { TodoList } from "../components/TodoList/TodoList";
+import { Todo } from "../components/Todo/Todo";
 
 export const Wrapper = () => {
 	return (
 		<>
-			<TodoList />
+			<Todo />
 		</>
 	);
 };

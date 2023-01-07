@@ -1,6 +1,6 @@
 import React from "react";
 
-import scss from "./Todoitem.module.scss";
+import scss from "./TodoItem.module.scss";
 
 export const TodoItem = ({ todo, id, completeTodo, deleteTodo }) => {
 	return (
