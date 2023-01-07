@@ -38,30 +38,28 @@ export const TodoList = () => {
 	};
 	return (
 		<>
-			<div className="App">
-				<div>
-					<input
-						placeholder="type something"
-						type="text"
-						value={inputValue}
-						onChange={(e) => {
-							setInputValue(e.target.value);
-						}}
-					/>
-					<button onClick={createTodo}>ADD</button>
-				</div>
-				{todos.map((el, id) => {
-					return (
-						<TodoItem
-							todo={el}
-							id={id}
-							deleteTodo={deleteTodo}
-							completeTodo={completeTodo}
-							key={id}
-						/>
-					);
-				})}
+			<div>
+				<input
+					placeholder="type something"
+					type="text"
+					value={inputValue}
+					onChange={(e) => {
+						setInputValue(e.target.value);
+					}}
+				/>
+				<button onClick={createTodo}>ADD</button>
 			</div>
+			{todos.map((el, id) => {
+				return (
+					<TodoItem
+						todo={el}
+						id={id}
+						deleteTodo={deleteTodo}
+						completeTodo={completeTodo}
+						key={id}
+					/>
+				);
+			})}
 		</>
 	);
 };
