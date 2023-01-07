@@ -1,10 +1,10 @@
 import React from "react";
-import scss from "./Wrapper.module.scss";
+import { TodoList } from "../components/TodoList/TodoList";
 
 export const Wrapper = () => {
-  return (
-    <>
-      <div className={scss.wrapper}></div>
-    </>
-  );
+	return (
+		<>
+			<TodoList />
+		</>
+	);
 };
