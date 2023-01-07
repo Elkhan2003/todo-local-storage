@@ -1,5 +1,13 @@
 # Getting Started with Create React App
 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=FF0000&lines=Hi,+my+name+is+Elkhan.)]()
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=5BCDEC&lines=Эта+сборка+для+продвинутых)]()
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=5BCDEC&lines=Со+сбросами+TypeScript)]()
+ 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
