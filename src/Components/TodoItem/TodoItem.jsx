@@ -1,13 +1,13 @@
 import React from "react";
 
-import css from "./Todoitem.module.scss";
+import scss from "./Todoitem.module.scss";
 
 export const TodoItem = ({ todo, id, completeTodo, deleteTodo }) => {
 	return (
 		<>
-			<div className={css.wrapper}>
+			<div className={scss.todoItems}>
 				<div
-					className={css.todo__item}
+					className={scss.todo__item}
 					style={todo.complete ? ready : notReady}
 				>
 					{todo.text}
