@@ -15,11 +15,11 @@ interface Props {
 }
 
 export const TodoItem: React.FC<Props> = ({
-	todo,
-	id,
-	completeTodo,
-	deleteTodo
-}) => {
+	                                          todo,
+	                                          id,
+	                                          completeTodo,
+	                                          deleteTodo
+                                          }) => {
 	return (
 		<>
 			<div className={scss.todo__item} style={todo.complete ? ready : notReady}>
