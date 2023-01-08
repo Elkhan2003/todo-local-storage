@@ -1,10 +1,10 @@
 import React from "react";
-import { Todo } from "../components/Todo/Todo";
+import {TodoList} from "../Components/TodoList/TodoList";
 
-export const Wrapper: React.FC = () => {
+export const Wrapper = () => {
 	return (
 		<>
-			<Todo />
+			<TodoList/>
 		</>
 	);
 };

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { TodoItem } from "../TodoItem/TodoItem";
 
-interface Todo {
+interface TodoList {
 	complete: boolean;
 	text: string;
 }
 
-export const Todo: React.FC = () => {
-	const [todos, setTodos] = useState<Todo[]>([]);
+export const TodoList: React.FC = () => {
+	const [todos, setTodos] = useState<TodoList[]>([]);
 	const [inputValue, setInputValue] = useState("");
 
 	const createTodo = () => {

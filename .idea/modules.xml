@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/my-app-typescript.iml" filepath="$PROJECT_DIR$/.idea/my-app-typescript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/todo-local-storage.iml" filepath="$PROJECT_DIR$/.idea/todo-local-storage.iml" />
     </modules>
   </component>
 </project>
