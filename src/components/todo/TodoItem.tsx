@@ -1,6 +1,6 @@
 import React from "react";
 
-import scss from "./TodoItem.module.scss";
+import scss from "./Todo.module.scss";
 
 interface Todo {
 	complete: boolean;
@@ -15,11 +15,11 @@ interface Props {
 }
 
 export const TodoItem: React.FC<Props> = ({
-	                                          todo,
-	                                          id,
-	                                          completeTodo,
-	                                          deleteTodo
-                                          }) => {
+	todo,
+	id,
+	completeTodo,
+	deleteTodo,
+}) => {
 	return (
 		<>
 			<div className={scss.todo__item} style={todo.complete ? ready : notReady}>
@@ -35,9 +35,9 @@ export const TodoItem: React.FC<Props> = ({
 };
 
 const ready = {
-	textDecoration: "line-through"
+	textDecoration: "line-through",
 };
 
 const notReady = {
-	textDecoration: "none"
+	textDecoration: "none",
 };

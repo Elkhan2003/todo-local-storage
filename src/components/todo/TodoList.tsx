@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { TodoItem } from "../TodoItem/TodoItem";
+import { TodoItem } from "./TodoItem";
 
 interface TodoList {
 	complete: boolean;
